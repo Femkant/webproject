@@ -11,8 +11,8 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Most awesome shit chat there is.</p>
-    <p>Create a new account <a href="/Register/Register">here</a></p>
-    or <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <p>Create a new account <a style="color:blue" href="/Register/Register">here</a></p>
+    or <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; color: blue;">Login</button>
 </div>
 <div id="id01" class="modal">
   
@@ -27,17 +27,18 @@
       <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
+      <input style="margin-bottom: 40px" type="password" placeholder="Enter Password" name="psw" required>
       <button type="submit" class="loginbtn">Login</button>
+
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+       <div class="container" style="background-color:#f1f1f1; margin-top: 90px">
+      <p>Don't have an account?<button onclick="openResister()" class="button" style="width: auto; color: blue;">Register</button>
+    <div class="psw">Forgot <a href="#">password?</a></div>
+      </p>
     </div>
   </form>
 </div>
@@ -62,15 +63,17 @@
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
     <hr>
-   <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+   <p>By creating an account you agree to our<button class="button" style="width: auto; color: blue;" onclick="termsPopup()">Terms & Privacy</button>.</p>
 
     <button type="submit" class="loginbtn">Register</button>
   </div>
 
    <div class="container" style="background-color:#f1f1f1">
-      <p>Already have an account? <a href="#">Sign in</a>.</p>
+      <p>Already have an account?<button onclick="openSignIn()" class="button" style="width: auto; color: blue;">Sign in</button></p>
     </div>
   
 </form>
 </div>
+
+<div id="snackbar">We do not have any Terms & Privacies at this website yet. For more information, please contact our customer service dude: Filip Fredlund!</div>
 </html>
