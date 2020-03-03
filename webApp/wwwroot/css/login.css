@@ -1,5 +1,11 @@
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -32,12 +38,12 @@ button:hover {
 }
 
 .loginbtn {
-  background-color: green;
+  background-color: white;
   width: 50%;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 25%;
-  border: 2px solid green;
+  border: 2px solid white;
   border-radius: 25px;
 }
 
@@ -56,7 +62,7 @@ img.avatar {
 
 .container {
   padding: 16px;
-  
+
 }
 
 span.psw {
@@ -77,6 +83,7 @@ span.psw {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
+
 }
 
 /* Modal Content/Box */
@@ -86,6 +93,9 @@ span.psw {
   border: 1px solid #888;
   width: 35%; /* Could be more or less, depending on screen size */
   min-height: 90%;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* The Close Button (x) */
@@ -93,7 +103,7 @@ span.psw {
   position: absolute;
   right: 25px;
   top: 0;
-  color: #000;
+  color: white;
   font-size: 35px;
   font-weight: bold;
 }
@@ -151,7 +161,7 @@ span.psw {
   padding: 16px;
   position: fixed;
   z-index: 1;
-  left: 50%;
+  left: 42%;
   bottom: 30px;
 }
 
