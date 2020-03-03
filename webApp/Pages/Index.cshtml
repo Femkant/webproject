@@ -2,6 +2,7 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    Layout = "_Layout";
 }
 <html>
     <head>
@@ -28,7 +29,7 @@
 
       <label for="psw"><b>Password</b></label>
       <input style="margin-bottom: 40px" type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit" class="loginbtn" >Login</button>
+      <button type="submit" class="loginbtn" onclick="login()">Login</button>
         <br>
       <div style="text-align:center">
         <input type="checkbox" checked="checked" name="remember"> Remember me
