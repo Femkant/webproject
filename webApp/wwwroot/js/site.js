@@ -20,7 +20,7 @@ function openRegister() {
     document.getElementById('id02').style.display='block';
 }
 
-function login() {
-    document.getElementById('id01').style.display='none';
-    window.location.href="/Chat/Chat";
-}
+// function login() {
+//     document.getElementById('id01').style.display='none';
+//     window.location.href="/Chat/Chat";
+// }

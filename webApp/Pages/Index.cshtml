@@ -17,7 +17,7 @@
 </div>
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" method="POST">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="~/img/img_avatar.png" alt="Avatar" class="avatar">
@@ -25,10 +25,10 @@
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input id="username" type="text" value="" placeholder="Enter Username" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
-      <input style="margin-bottom: 40px" type="password" placeholder="Enter Password" name="psw" required>
+      <input id="password" style="margin-bottom: 40px" type="password" value="" placeholder="Enter Password" name="psw" required>
       <button type="submit" class="loginbtn" onclick="login()">Login</button>
         <br>
       <div style="text-align:center">
@@ -60,6 +60,9 @@
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
@@ -80,3 +83,5 @@
 
 <div id="snackbar">We do not have any Terms & Privacies at this website yet. For more information, please contact our customer service dude: Filip Fredlund!</div>
 </html>
+
+<script type="text/javascript" src="~/js/login.js"></script>
